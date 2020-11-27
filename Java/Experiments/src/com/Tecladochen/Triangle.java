@@ -1,6 +1,7 @@
 package com.Tecladochen;
 
 import java.util.Date;
+import java.util.Scanner;
 
 class GeometricObject{
     private String color = "white";
@@ -41,9 +42,7 @@ public class Triangle extends GeometricObject {
     private double side1, side2, side3;
 
     public Triangle() {
-        side1 = 1.0;
-        side2 = 1.0;
-        side3 = 1.0;
+        this(1,1,1);
     }
     public Triangle(double x, double y, double z){
         side1 = x;
@@ -69,11 +68,23 @@ public class Triangle extends GeometricObject {
     public double getPerimeter(){
         return side1 + side2 + side3;
     }
+    @Override
     public String toString(){
-        return "Triangle: side1 = " + side1 + "side2 = " + side2 + "side3 = " + side3;
+        return super.toString() + "\nTriangle: side1 = " + side1 + " side2 = " + side2 + " side3 = " + side3;
     }
-
+}
+class Test{
     public static void main(String[] args) {
-        
+        Scanner input = new Scanner(System.in);
+        System.out.print("please enter :");
+        double x = input.nextDouble();
+        double y = input.nextDouble();
+        double z = input.nextDouble();
+        String color = input.next();
+        boolean filled = input.nextBoolean();
+        Triangle temp = new Triangle(x,y,z);
+        temp.setColor(color);
+        temp.setFilled(filled);
+        System.out.println(temp.toString());
     }
 }
