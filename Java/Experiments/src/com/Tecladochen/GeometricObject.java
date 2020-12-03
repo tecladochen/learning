@@ -3,14 +3,14 @@ package com.Tecladochen;
 import java.util.Date;
 import java.util.Scanner;
 
-/*class GeometricObject{
+public abstract class GeometricObject {
     private String color = "white";
     private boolean filled;
-    private Date dateCreated;
-    public GeometricObject(){
+    private java.util.Date dateCreated;
+    protected GeometricObject(){
         dateCreated = new Date();
     }
-    public GeometricObject(String color, boolean filled){
+    protected GeometricObject(String color, boolean filled){
         dateCreated = new Date();
         this.color = color;
         this.filled = filled;
@@ -34,11 +34,15 @@ import java.util.Scanner;
     public Date getDateCreated() {
         return dateCreated;
     }
-    public String toString(){
-        return "created on " + dateCreated + "\ncolor: " + color + " and filled: " + filled;
+
+    @Override
+    public String toString() {
+        return "created on  " + dateCreated + "\ncolor: " + color + " and filled:" + filled;
     }
+    public abstract double getArea();
+    public abstract double getPerimeter();
 }
-public class Triangle extends GeometricObject {
+class Triangle extends GeometricObject{
     private double side1, side2, side3;
 
     public Triangle() {
@@ -73,7 +77,7 @@ public class Triangle extends GeometricObject {
         return super.toString() + "\nTriangle: side1 = " + side1 + " side2 = " + side2 + " side3 = " + side3;
     }
 }
-class Test{
+class TestAbstract{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("please enter :");
@@ -82,9 +86,9 @@ class Test{
         double z = input.nextDouble();
         String color = input.next();
         boolean filled = input.nextBoolean();
-        Triangle temp = new Triangle(x,y,z);
+        GeometricObject temp = new Triangle(x,y,z);
         temp.setColor(color);
         temp.setFilled(filled);
-        System.out.println(temp.toString());
+        System.out.println(temp.toString() + "\nArea:" + temp.getArea() + "  Perimeter:" + temp.getPerimeter());
     }
-}*/
+}

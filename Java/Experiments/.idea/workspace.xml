@@ -32,19 +32,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Application.TestAccount">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.Tecladochen.Main" />
+  <component name="RunManager" selected="Application.PrintCalendar">
+    <configuration name="PrintCalendar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Tecladochen.PrintCalendar" />
       <module name="Experiments" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Tecladochen.Test" />
+      <module name="Experiments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Tecladochen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAbstract" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Tecladochen.TestAbstract" />
       <module name="Experiments" />
       <extension name="coverage">
         <pattern>
@@ -84,10 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintCalendar" />
+        <item itemvalue="Application.TestAbstract" />
         <item itemvalue="Application.TestAccount" />
         <item itemvalue="Application.TestPerson" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -115,25 +126,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1341" y="273" key="#com.intellij.ide.util.MemberChooser" timestamp="1606551295392">
+    <state x="1341" y="273" key="#com.intellij.ide.util.MemberChooser" timestamp="1606984128635">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state x="1341" y="273" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1606984128635" />
     <state x="1341" y="273" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1606551295392" />
-    <state width="2005" height="579" key="GridCell.Tab.0.bottom" timestamp="1606552080515">
+    <state width="2005" height="579" key="GridCell.Tab.0.bottom" timestamp="1606990356165">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state width="2005" height="579" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1606990356165" />
     <state width="2005" height="579" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1606552080515" />
-    <state width="2005" height="579" key="GridCell.Tab.0.center" timestamp="1606552080515">
+    <state width="2005" height="579" key="GridCell.Tab.0.center" timestamp="1606990356165">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state width="2005" height="579" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1606990356165" />
     <state width="2005" height="579" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1606552080515" />
-    <state width="2005" height="579" key="GridCell.Tab.0.left" timestamp="1606552080515">
+    <state width="2005" height="579" key="GridCell.Tab.0.left" timestamp="1606990356165">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state width="2005" height="579" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1606990356165" />
     <state width="2005" height="579" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1606552080515" />
-    <state width="2005" height="579" key="GridCell.Tab.0.right" timestamp="1606552080515">
+    <state width="2005" height="579" key="GridCell.Tab.0.right" timestamp="1606990356165">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state width="2005" height="579" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1606990356165" />
     <state width="2005" height="579" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1606552080515" />
     <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1606547881895">
       <screen x="0" y="0" width="2048" height="1112" />
