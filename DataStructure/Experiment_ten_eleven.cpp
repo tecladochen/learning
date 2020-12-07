@@ -120,17 +120,21 @@ void Sort_Select(SqList &L){ //简单选择排序
 void Sort_shell(SqList &L, int dk){ //希尔排序 
 	int i,j; 
     for(i = 1+dk; i <= L.length; i++)
-        if (cm[3].cpn++, L.r[i].key < L.r[i-dk].key)     //将 L.r[i]插入有序增量子表 
-        	{ L.r[0] = L.r[i];    //将待插入的第i个记录暂存在r[0]中，同时r[0]为监视哨
+        if ( L.r[i].key < L.r[i-dk].key)     //将 L.r[i]插入有序增量子表 
+        	{ cm[3].cpn++;
+			  L.r[0] = L.r[i];    //将待插入的第i个记录暂存在r[0]中，同时r[0]为监视哨
         	  cm[3].mvn++;
            	  L.r[i] = L.r[i-dk];
            	  cm[3].mvn++;
-           	  for(j = i - 2 * dk; j > 0 && cm[3].cpn++,L.r[0].key < L.r[j].key; j -= dk)
-     	         L.r[j + dk] = L.r[j];       // 将前面的较大者L.r[j+dk]后移
-     	         cm[3].mvn++;
+           	  for(j = i - 2 * dk; j > 0 && L.r[0].key < L.r[j].key; j -= dk)
+     	         {L.r[j + dk] = L.r[j];       // 将前面的较大者L.r[j+dk]后移
+     	          cm[3].cpn++;
+     	          cm[3].mvn++;
+     	         }    
               L.r[j+dk] = L.r[0];            // 将L.r[i]插入第j+dk个位置
               cm[3].mvn++;
             }
+            cm[3].cpn++;
 }
 
 void Sort_Shell(SqList &L, int dlta[],int t){
