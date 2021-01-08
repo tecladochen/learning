@@ -35,33 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.HeapOverFlow">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Tecladochen.Calculator" />
-      <module name="Experiments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Tecladochen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercise12_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Tecladochen.Exercise12_01" />
-      <module name="Experiments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Tecladochen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.four">
     <configuration name="HeapOverFlow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Tecladochen.HeapOverFlow" />
       <module name="Experiments" />
@@ -75,12 +49,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Tecladochen.InputTwoNumbers" />
+    <configuration name="four" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tang.four" />
       <module name="Experiments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Tecladochen.*" />
+          <option name="PATTERN" value="Tang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +62,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OutofBounds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Tecladochen.OutofBounds" />
+    <configuration name="one" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tang.one" />
       <module name="Experiments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Tecladochen.*" />
+          <option name="PATTERN" value="Tang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="three" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tang.three" />
+      <module name="Experiments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="two" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tang.two" />
+      <module name="Experiments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.four" />
+        <item itemvalue="Application.two" />
+        <item itemvalue="Application.one" />
+        <item itemvalue="Application.three" />
         <item itemvalue="Application.HeapOverFlow" />
-        <item itemvalue="Application.OutofBounds" />
-        <item itemvalue="Application.InputTwoNumbers" />
-        <item itemvalue="Application.Exercise12_01" />
-        <item itemvalue="Application.Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -135,55 +135,63 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="738" y="357" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610092791120">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="738" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1610092791120" />
     <state x="1341" y="273" key="#com.intellij.ide.util.MemberChooser" timestamp="1608276853308">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1006" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608274650823" />
     <state x="1341" y="273" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1608276853308" />
     <state x="1341" y="273" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1606551295392" />
-    <state width="980" height="569" key="GridCell.Tab.0.bottom" timestamp="1608349492958">
+    <state width="2005" height="576" key="GridCell.Tab.0.bottom" timestamp="1610092900570">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="1493" height="404" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608274947124" />
     <state width="979" height="574" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1608281688697" />
-    <state width="980" height="569" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1608349492958" />
-    <state width="980" height="569" key="GridCell.Tab.0.center" timestamp="1608349492958">
+    <state width="2005" height="576" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1610092900570" />
+    <state width="2005" height="576" key="GridCell.Tab.0.center" timestamp="1610092900570">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="1493" height="404" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608274947124" />
     <state width="979" height="574" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1608281688697" />
-    <state width="980" height="569" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1608349492958" />
-    <state width="980" height="569" key="GridCell.Tab.0.left" timestamp="1608349492958">
+    <state width="2005" height="576" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1610092900570" />
+    <state width="2005" height="576" key="GridCell.Tab.0.left" timestamp="1610092900570">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="1493" height="404" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608274947124" />
     <state width="979" height="574" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1608281688697" />
-    <state width="980" height="569" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1608349492958" />
-    <state width="980" height="569" key="GridCell.Tab.0.right" timestamp="1608349492958">
+    <state width="2005" height="576" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1610092900570" />
+    <state width="2005" height="576" key="GridCell.Tab.0.right" timestamp="1610092900570">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="1493" height="404" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608274947124" />
     <state width="979" height="574" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.864.1536@0.0.2048.1112" timestamp="1608281688697" />
-    <state width="980" height="569" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1608349492958" />
-    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1606547881895">
+    <state width="2005" height="576" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1610092900570" />
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1609635788110">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="376" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1606547881895" />
-    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1606547881895">
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1609635788110" />
+    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1609635788110">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="376" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1606547881895" />
-    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1606547881895">
+    <state width="2005" height="376" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1609635788110" />
+    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1609635788110">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="376" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1606547881895" />
-    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1606547881895">
+    <state width="2005" height="376" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1609635788110" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1609635788110">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="376" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1606547881895" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1609635788110" />
     <state x="1082" y="248" width="672" height="678" key="search.everywhere.popup" timestamp="1606545885083">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1082" y="248" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1606545885083" />
+    <state x="747" y="468" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1608459138372">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="747" y="468" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1608459138372" />
   </component>
 </project>
