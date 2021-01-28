@@ -1,4 +1,4 @@
-# MySQL基础
+#   MySQL基础
 
 > **说明**：SQL语句不区分大小写，但在执行过程中所有SQL语句都会被转化成大写在执行，所有养成大写的良好				习惯可以优化语句的性能。
 
@@ -222,12 +222,124 @@ ORDER BY vend_name;
 -- 匹配特殊字符，MySQL使用俩个反斜杠表示转义，一个是正则表达式的，一个是MySQL自身的
 ```
 
-## 8.计算字段
-
 ```mysql
-SELECT Concat(vend_name,' (',vend_country,')')
-FROM vendors
- 
+SELECT prod_name
+FROM products
+WHERE prod_name REGEXP '\\([0-9] sticks?\\)'
+ORDER BY prod_name;
+-- \\表示转义，俩边的转义表示匹配一对小括号
+-- ？表示前一个字符匹配零次或一次，简单说？前的字符是可有可无的
 ```
 
-## 9.
+| 重复元字符 |            说明             |
+| :--------: | :-------------------------: |
+|    `*`     |        0个或多个匹配        |
+|    `+`     | 1个或多个匹配( 等于`{1,}` ) |
+|    `?`     | 0个或1个匹配( 等于`{0,1}` ) |
+|   `{n}`    |        指定数目匹配         |
+|   `{n,}`   |    不少于指定数目的匹配     |
+|  `{n,m}`   | 匹配数目的范围( m不超过255) |
+
+```mysql
+SELECT prod_name
+FROM products
+WHERE prod_name REGEXP '[[:digit:]]{4}'
+ORDER BY prod_name;
+-- [:digit:]属于匹配字符类，是预定义的字符类，经常需要使用字符的常用类
+-- {4}表示匹配次数
+```
+
+|    字符类    |                         说明                         |
+| :----------: | :--------------------------------------------------: |
+| `[:alnum:]`  |           任意字母和数字(同`[a-zA-Z0-9]`)            |
+| `[:alpha:]`  |                任意字符(同`[a-zA-Z]`)                |
+| `[:blank:]`  |                 空格和制表(`[\\t]`)                  |
+| `[:cntrl:]`  |           ASCII控制字符(ASCII 0到31和127)            |
+| `[:digit:]`  |                  任意数字(`[0-9]`)                   |
+| `[:graph:]`  |           与`[:print:]`相同，但不包含空格            |
+| `[:lower:]`  |               任意小写字母(同`[a-z]`)                |
+| `[:print:]`  |                    任意可打印字符                    |
+| `[:punct:]`  | 既不在(同`[:alnum:]`)又不在(同`[:cntrl:]`)的任意字符 |
+| `[:space:]`  |  包括空格在内的任意空白字符(同`[\\f\\n\\r\\t\\v]`)   |
+| `[:upper:]`  |               任意大写字母(同`[A-Z]`)                |
+| `[:xdigit:]` |          任意十六进制数字(同`[a-fA-F0-9]`)           |
+
+> **注意**：`[:digit:]`匹配任意数字，因而它为一个集合，所以`[[:digit:]]{4}`中需要在`[:digit:]`外加一       				个中括号使成为限定一个匹配
+
+```mysql
+SELECT prod_name
+FROM products
+WHERE prod_name REGEXP '^[0-9\\.]'
+ORDER BY prod_name;
+-- ^ 是定位元字符，表示匹配串的开始
+```
+
+| 定位元字符 |    说明    |
+| :--------: | :--------: |
+|    `^`     | 文本的开始 |
+|    `$`     | 文本的结尾 |
+| `[[:<:]]`  |  词的开始  |
+| `[[:>:]]`  |  词的结尾  |
+
+> **注意**：`^` 有俩种用法，一种是作为定位元字符，表示匹配文本的开始；另一种是和`[]`	一起表示否定该集	 				合，例如`[^123]`
+
+> **注意**：`REGEXP`可以和`LIKE`有类似功能，利用定位符，每个正则表达式用`^`开始，用`$`结束，即作用和		    			`LIKE`一样
+
+```mysql
+SELECT 'hello' REGEXP '[0-9]';
+-- 若可以匹配则返回1，否则返回0
+```
+
+> **提示**：简单的正则表达式测试，测试表达式的准确性
+
+## 8.创建计算字段
+
+### 拼接字段
+
+```mysql
+-- Concat()函数用来把多个串连接生成一个串
+SELECT Concat(vend_name,' (',vend_country,')')
+FROM vendors
+ORDER BY vend_name;
+```
+
+### 使用别名
+
+```mysql
+-- as 关键字赋予一个字段或值的别名
+SELECT Concat(Rtrim(vend_name),' (',Rtrim(vend_country),')') AS
+vend_title
+FROM vendors
+ORDER BY vend_name;
+```
+
+### 算术计算
+
+```mysql
+-- 可以把计算式作为字段使用别名来处理
+SELECT prod_id,
+	   quantity,
+	   item_price,
+	   quantity * item_price AS expanded_price
+FROM orderitems
+WHERE order_num = 2005;
+```
+
+## 9.处理函数
+
+### 文本处理函数
+
+```mysql
+SELECT vend_name, Upper(vend_name) AS vend_name_upcase
+FROM vendors
+ORDER BY vend_name;
+```
+
+|    函数    |       说明       |
+| :--------: | :--------------: |
+| `Length()` | 返回一个串的长度 |
+| `Lower()`  |  将串转化成小写  |
+| `LTrim()`  |  去掉左边的空格  |
+| `RTrim()`  |                  |
+| `Upper()`  |                  |
+
